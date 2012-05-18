@@ -1,0 +1,14 @@
+[user]
+	name = Yoichi Isozaki
+	email = abe4tawa8@gmail.com
+[core]
+	autocrlf = input
+	safecrlf = true
+	editor = /usr/bin/vim
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	di = diff
+	ds = diff --staged
+	sg = log --graph --abbrev-commit --pretty=oneline
