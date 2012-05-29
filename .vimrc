@@ -61,6 +61,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+Bundle 'thinca/vim-quickrun'
 
 " ファイル形式の検出、プラグイン、インデントを有効にする
 filetype plugin indent on
