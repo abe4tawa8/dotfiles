@@ -62,6 +62,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/unite.vim'
 Bundle 'thinca/vim-quickrun'
 
 " ファイル形式の検出、プラグイン、インデントを有効にする
