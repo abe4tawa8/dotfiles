@@ -22,6 +22,9 @@ set tabstop=4
 " 自動インデントは空白4つとする
 set shiftwidth=4
 
+" テキスト幅で改行しない
+set textwidth=0
+
 " 閉じ括弧が入力されたとき、対応する括弧を表示する
 set showmatch
 
