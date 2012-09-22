@@ -17,6 +17,8 @@ if [ $(uname) = "Darwin" ]; then
   export AWS_RDS_HOME="/usr/local/Library/LinkedKegs/rds-command-line-tools/jars"
   export AWS_CLOUDFORMATION_HOME="/usr/local/Library/LinkedKegs/aws-cfn-tools/jars"
   export AWS_IAM_HOME="/usr/local/Cellar/aws-iam-tools/1.5.0/jars"
+  export AWS_CLOUDWATCH_HOME="/usr/local/Library/LinkedKegs/cloud-watch/jars"
+  export SERVICE_HOME="$AWS_CLOUDWATCH_HOME"
 fi
 
 # RVM (Ruby Version Manager)
