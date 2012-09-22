@@ -110,8 +110,8 @@ if [ $(uname) = "Darwin" ]; then
   alias mysql_unload='launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
   alias pgsql_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
   alias pgsql_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-  alias pgsql_load='launchctl load -w ~/Library/LaunchAgents/org.postgresql.postgres.plist'
-  alias pgsql_unload='launchctl unload -w ~/Library/LaunchAgents/org.postgresql.postgres.plist'
+  alias pgsql_load='launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
+  alias pgsql_unload='launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
   alias mongo_load='launchctl load -w ~/Library/LaunchAgents/org.mongodb.mongod.plist'
   alias mongo_unload='launchctl unload -w ~/Library/LaunchAgents/org.mongodb.mongod.plist'
 else
