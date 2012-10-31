@@ -59,14 +59,15 @@ helptags $HOME/.vim/doc
 " ファイル形式の検出を無効にする
 filetype off
 
-" Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" NeoBundleを有効にする
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
-Bundle 'gmarik/vundle'
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/unite.vim'
-Bundle 'thinca/vim-quickrun'
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" 使用するプラグインを列記する
+NeoBundle 'Shougo/vimproc'
 
 " ファイル形式の検出、プラグイン、インデントを有効にする
 filetype plugin indent on
