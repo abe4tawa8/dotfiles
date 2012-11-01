@@ -25,7 +25,8 @@ fi
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # rbenv
-eval "$(rbenv init -)"
+which rbenv > /dev/null 2>&1
+[[ $? -eq 0 ]] && eval "$(rbenv init -)"
 
 # node.js
 export NODE_PATH=/usr/local/lib/node
