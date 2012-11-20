@@ -114,6 +114,8 @@ if [ $(uname) = "Darwin" ]; then
   alias pgsql_unload='launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
   alias mongo_load='launchctl load -w ~/Library/LaunchAgents/org.mongodb.mongod.plist'
   alias mongo_unload='launchctl unload -w ~/Library/LaunchAgents/org.mongodb.mongod.plist'
+  alias jenkins_load='sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist'
+  alias jenkins_unload='sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist'
 else
   alias ll='ls -l'
   alias la='ls -al'
