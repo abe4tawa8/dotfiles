@@ -31,4 +31,7 @@ which rbenv > /dev/null 2>&1
 # node.js
 export NODE_PATH=/usr/local/lib/node
 
+# Heroku Toolbelt
+export PATH=/usr/local/heroku/bin:$PATH
+
 # EOF
