@@ -3,6 +3,7 @@
 	email = abe4tawa8@gmail.com
 [core]
 	editor = /usr/bin/vim
+	excludesfile = ~/.gitignore_global
 [alias]
 	co = checkout
 	ci = commit
@@ -10,3 +11,9 @@
 	di = diff
 	ds = diff --staged
 	sg = log --graph --abbrev-commit --pretty=oneline
+[merge]
+	ff = false
+[pull]
+	rebase = true
+[push]
+	default = upstream
