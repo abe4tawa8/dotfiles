@@ -70,6 +70,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Shougo/neocomplcache'
 
 " ファイル形式の検出、プラグイン、インデントを有効にする
 filetype plugin indent on
@@ -83,5 +84,8 @@ syntax on
 
 " カラースキーム
 colorscheme murphy
+
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1
 
 " EOF
