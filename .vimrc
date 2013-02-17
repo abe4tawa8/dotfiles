@@ -89,4 +89,16 @@ colorscheme murphy
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
+" unite.vim
+" 入力モードで開始する
+let g:unite_enable_start_insert = 0
+" バッファ一覧
+noremap <C-W><C-B> :Unite buffer<CR>
+" ファイル一覧
+noremap <C-W><C-F> :UniteWithBufferDir -buffer-name=files file<CR>
+" 最近使用したファイルの一覧
+noremap <C-W><C-R> :Unite file_mru<CR>
+" レジスタ一覧
+noremap <C-W><C-Y> :Unite -buffer-name=register register<CR>
+
 " EOF
