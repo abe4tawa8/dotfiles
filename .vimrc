@@ -72,6 +72,7 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
 
 " ファイル形式の検出、プラグイン、インデントを有効にする
 filetype plugin indent on
