@@ -11,6 +11,7 @@
 	di = diff
 	ds = diff --staged
 	sg = log --graph --abbrev-commit --pretty=oneline
+	br = branch
 [merge]
 	ff = false
 [pull]
