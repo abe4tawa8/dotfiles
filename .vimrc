@@ -38,6 +38,10 @@ set fileencodings=utf-8,euc-jp,iso-2022-jp,cp932
 set fileformat=unix
 set fileformats=unix,dos,mac
 
+" 改行文字やタブ文字を表示する
+set list
+set listchars=eol:¬,tab:▸\ ,trail:-
+
 " ステータスライン
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
