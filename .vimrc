@@ -81,6 +81,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'ujihisa/shadow.vim'
+NeoBundle 'ngmy/vim-rubocop'
 
 NeoBundleCheck
 
