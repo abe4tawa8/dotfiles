@@ -70,6 +70,8 @@ endif
 
 call neobundle#rc(expand('~/.vim/bundle/'))
 
+NeoBundleFetch 'Shougo/neobundle.vim'
+
 " 使用するプラグインを列記する
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'thinca/vim-quickrun'
@@ -79,6 +81,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'ujihisa/shadow.vim'
+
+NeoBundleCheck
 
 " ファイル形式の検出、プラグイン、インデントを有効にする
 filetype plugin indent on
