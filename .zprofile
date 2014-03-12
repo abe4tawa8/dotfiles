@@ -28,6 +28,10 @@ fi
 which rbenv > /dev/null 2>&1
 [[ $? -eq 0 ]] && eval "$(rbenv init -)"
 
+# hub
+which hub > /dev/null 2>&1
+[[ $? -eq 0 ]] && eval "$(hub alias -s)"
+
 # node.js
 export NODE_PATH=/usr/local/lib/node
 
