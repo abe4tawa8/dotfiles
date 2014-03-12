@@ -24,6 +24,9 @@ setopt correct
 # 補完候補を詰めて画面に表示する
 setopt list_packed
 
+# hubコマンドでgitコマンドと同様の補完を行う
+compdef hub=git
+
 ## ヒストリ
 HISTFILE=$HOME/.zhistory  # ヒストリファイル
 HISTSIZE=10000            # メモリ上に保持するヒストリ数
