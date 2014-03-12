@@ -123,5 +123,6 @@ else
   alias la='ls -al'
 fi
 alias vi='vim'
+alias be='bundle exec'
 
 # EOF
