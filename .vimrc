@@ -82,6 +82,7 @@ NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'ujihisa/shadow.vim'
 NeoBundle 'ngmy/vim-rubocop'
+NeoBundle 'altercation/vim-colors-solarized'
 
 NeoBundleCheck
 
@@ -96,7 +97,11 @@ autocmd FileType cucumber set tabstop=2 shiftwidth=2
 syntax on
 
 " カラースキーム
-colorscheme murphy
+colorscheme solarized
+
+" Solarized
+let g:solarized_termcolors = 256
+let g:solarized_termtrans = 1
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
