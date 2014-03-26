@@ -21,6 +21,9 @@ if [ $(uname) = "Darwin" ]; then
   export SERVICE_HOME="$AWS_CLOUDWATCH_HOME"
 fi
 
+# tmux
+[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+
 # RVM (Ruby Version Manager)
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
