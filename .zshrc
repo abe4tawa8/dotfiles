@@ -106,9 +106,10 @@ alias -g ....='../..'
 
 ## エイリアス
 if [ $(uname) = "Darwin" ]; then
-  alias ls='ls -v'
-  alias ll='ls -lv'
-  alias la='ls -alv'
+  alias ls='ls -vG'
+  alias ll='ls -lvG'
+  alias l1='ls -1vG'
+  alias la='ls -alvG'
   alias mysql_load='launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
   alias mysql_unload='launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
   alias pgsql_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
