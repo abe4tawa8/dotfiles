@@ -94,6 +94,11 @@ setopt no_beep
 # 補完候補表示時にビープ音を鳴らさない
 setopt nolistbeep
 
+# zsh-completions
+if [[ -d /usr/local/share/zsh-completions ]]; then
+  fpath=(/usr/local/share/zsh-completions $fpath)
+fi
+
 ## グローバルエイリアス
 alias -g L="| $PAGER"
 alias -g M="| $PAGER"
