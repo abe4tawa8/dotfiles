@@ -133,5 +133,6 @@ else
 fi
 alias vi='vim'
 alias be='bundle exec'
+alias psg='ps aux | grep'
 
 # EOF
