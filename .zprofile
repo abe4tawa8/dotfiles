@@ -34,6 +34,22 @@ fi
 which rbenv > /dev/null 2>&1
 [[ $? -eq 0 ]] && eval "$(rbenv init -)"
 
+# pyenv
+if [[ -d "$HOME/.pyenv/bin" ]]; then
+  export PATH=$HOME/.pyenv/bin:$PATH
+fi
+if which pyenv > /dev/null; then
+  eval "$(pyenv init -)"
+fi
+
+# virtualenv
+if [[ -d "$HOME/.pyenv/plugins/pyenv-virtualenv/bin" ]]; then
+  export PATH=$HOME/.pyenv/plugins/pyenv-virtualenv/bin:$PATH
+fi
+if which pyenv-virtualenv-init > /dev/null; then
+  eval "$(pyenv virtualenv-init -)"
+fi
+
 # hub
 which hub > /dev/null 2>&1
 [[ $? -eq 0 ]] && eval "$(hub alias -s)"
