@@ -83,6 +83,7 @@ NeoBundle 'Shougo/vimshell'
 NeoBundle 'ujihisa/shadow.vim'
 NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'rking/ag.vim'
 
 NeoBundleCheck
 
