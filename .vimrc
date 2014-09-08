@@ -97,6 +97,9 @@ autocmd FileType cucumber set tabstop=2 shiftwidth=2
 " 構文強調を有効にする
 syntax on
 
+" 背景の色設定グループ
+set background=dark
+
 " カラースキーム
 colorscheme solarized
 
