@@ -46,7 +46,7 @@ fi
 if [[ -d "$HOME/.pyenv/plugins/pyenv-virtualenv/bin" ]]; then
   export PATH=$HOME/.pyenv/plugins/pyenv-virtualenv/bin:$PATH
 fi
-if which pyenv-virtualenv-init > /dev/null; then
+if which pyenv-virtualenv-init > /dev/null 2>&1; then
   eval "$(pyenv virtualenv-init -)"
 fi
 
