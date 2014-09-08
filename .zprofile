@@ -38,7 +38,7 @@ which rbenv > /dev/null 2>&1
 if [[ -d "$HOME/.pyenv/bin" ]]; then
   export PATH=$HOME/.pyenv/bin:$PATH
 fi
-if which pyenv > /dev/null; then
+if which pyenv > /dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
