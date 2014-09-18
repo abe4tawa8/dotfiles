@@ -127,6 +127,8 @@ if [ $(uname) = "Darwin" ]; then
   alias jenkins_unload='sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist'
   alias memcache_load='sudo launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist'
   alias memcache_unload='sudo launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist'
+  alias redis_load='sudo launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist'
+  alias redis_unload='sudo launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist'
 else
   alias ll='ls -l'
   alias la='ls -al'
