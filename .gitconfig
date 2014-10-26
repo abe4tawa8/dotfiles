@@ -8,6 +8,8 @@
 	co = checkout
 	ci = commit
 	st = status
+	sb = status -sb
+	lol = log --oneline
 	di = diff
 	ds = diff --staged
 	sg = log --graph --abbrev-commit --pretty=oneline
