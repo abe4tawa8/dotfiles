@@ -68,7 +68,7 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
@@ -84,6 +84,8 @@ NeoBundle 'ujihisa/shadow.vim'
 NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'rking/ag.vim'
+
+call neobundle#end()
 
 NeoBundleCheck
 
