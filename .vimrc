@@ -99,6 +99,16 @@ autocmd FileType cucumber set tabstop=2 shiftwidth=2
 " 構文強調を有効にする
 syntax on
 
+" 検索結果のハイライト
+set hlsearch
+
+nnoremap <Esc><Esc> :<C-u>set nohlsearch<Return>
+
+nnoremap / :<C-u>set hlsearch<Return>/
+nnoremap ? :<C-u>set hlsearch<Return>?
+nnoremap * :<C-u>set hlsearch<Return>*
+nnoremap # :<C-u>set hlsearch<Return>#
+
 " 背景の色設定グループ
 set background=dark
 
