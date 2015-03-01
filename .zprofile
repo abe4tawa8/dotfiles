@@ -50,6 +50,14 @@ if which pyenv-virtualenv-init > /dev/null 2>&1; then
   eval "$(pyenv virtualenv-init -)"
 fi
 
+# exenv
+if [[ -d "$HOME/.exenv/bin" ]]; then
+  export PATH=$HOME/.exenv/bin:$PATH
+fi
+if which exenv > /dev/null 2>&1; then
+  eval "$(exenv init -)"
+fi
+
 # hub
 which hub > /dev/null 2>&1
 [[ $? -eq 0 ]] && eval "$(hub alias -s)"
