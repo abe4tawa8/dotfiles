@@ -13,6 +13,9 @@ set backspace=indent,eol,start
 " 行番号を表示しない
 set nonumber
 
+" ビープ音の代わりにビジュアルベルを使う
+set visualbell
+
 " タブはスペースに展開する
 set expandtab
 
