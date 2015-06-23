@@ -87,6 +87,7 @@ NeoBundle 'ujihisa/shadow.vim'
 NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'szw/vim-tags'
 
 call neobundle#end()
 
