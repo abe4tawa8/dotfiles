@@ -34,6 +34,9 @@ fi
 which rbenv > /dev/null 2>&1
 [[ $? -eq 0 ]] && eval "$(rbenv init -)"
 
+# Python
+export PYTHONSTARTUP=$HOME/.pystartup
+
 # pyenv
 if [[ -d "$HOME/.pyenv/bin" ]]; then
   export PATH=$HOME/.pyenv/bin:$PATH
