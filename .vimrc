@@ -78,6 +78,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " 使用するプラグインを列記する
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
@@ -137,5 +138,11 @@ noremap <C-W><C-F> :UniteWithBufferDir -buffer-name=files file<CR>
 noremap <C-W><C-R> :Unite file_mru<CR>
 " レジスタ一覧
 noremap <C-W><C-Y> :Unite -buffer-name=register register<CR>
+
+" vim-tags
+" 使用する ctags コマンド
+let g:vim_tags_ctags_binary = "/usr/local/bin/ctags"
+" ctags コマンドを非同期で実行するか
+let g:vim_tags_use_vim_dispatch = 1
 
 " EOF
