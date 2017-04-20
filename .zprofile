@@ -24,6 +24,12 @@ fi
 # tmux
 [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
 
+# anyenv
+if [[ -d "$HOME/.anyenv/bin" ]]; then
+  export PATH=$HOME/.anyenv/bin:$PATH
+  eval "$(anyenv init -)"
+fi
+
 # RVM (Ruby Version Manager)
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
