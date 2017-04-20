@@ -33,13 +33,6 @@ fi
 # RVM (Ruby Version Manager)
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-# rbenv
-if [[ -d "$HOME/.rbenv/bin" ]]; then
-  export PATH=$HOME/.rbenv/bin:$PATH
-fi
-which rbenv > /dev/null 2>&1
-[[ $? -eq 0 ]] && eval "$(rbenv init -)"
-
 # Python
 export PYTHONSTARTUP=$HOME/.pystartup
 
