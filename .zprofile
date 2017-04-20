@@ -33,22 +33,6 @@ fi
 # Python
 export PYTHONSTARTUP=$HOME/.pystartup
 
-# pyenv
-if [[ -d "$HOME/.pyenv/bin" ]]; then
-  export PATH=$HOME/.pyenv/bin:$PATH
-fi
-if which pyenv > /dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-
-# virtualenv
-if [[ -d "$HOME/.pyenv/plugins/pyenv-virtualenv/bin" ]]; then
-  export PATH=$HOME/.pyenv/plugins/pyenv-virtualenv/bin:$PATH
-fi
-if which pyenv-virtualenv-init > /dev/null 2>&1; then
-  eval "$(pyenv virtualenv-init -)"
-fi
-
 # exenv
 if [[ -d "$HOME/.exenv/bin" ]]; then
   export PATH=$HOME/.exenv/bin:$PATH
