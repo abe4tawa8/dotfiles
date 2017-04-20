@@ -24,49 +24,18 @@ fi
 # tmux
 [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
 
-# RVM (Ruby Version Manager)
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-# rbenv
-if [[ -d "$HOME/.rbenv/bin" ]]; then
-  export PATH=$HOME/.rbenv/bin:$PATH
+# anyenv
+if [[ -d "$HOME/.anyenv/bin" ]]; then
+  export PATH=$HOME/.anyenv/bin:$PATH
+  eval "$(anyenv init -)"
 fi
-which rbenv > /dev/null 2>&1
-[[ $? -eq 0 ]] && eval "$(rbenv init -)"
 
 # Python
 export PYTHONSTARTUP=$HOME/.pystartup
 
-# pyenv
-if [[ -d "$HOME/.pyenv/bin" ]]; then
-  export PATH=$HOME/.pyenv/bin:$PATH
-fi
-if which pyenv > /dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-
-# virtualenv
-if [[ -d "$HOME/.pyenv/plugins/pyenv-virtualenv/bin" ]]; then
-  export PATH=$HOME/.pyenv/plugins/pyenv-virtualenv/bin:$PATH
-fi
-if which pyenv-virtualenv-init > /dev/null 2>&1; then
-  eval "$(pyenv virtualenv-init -)"
-fi
-
-# exenv
-if [[ -d "$HOME/.exenv/bin" ]]; then
-  export PATH=$HOME/.exenv/bin:$PATH
-fi
-if which exenv > /dev/null 2>&1; then
-  eval "$(exenv init -)"
-fi
-
 # hub
 which hub > /dev/null 2>&1
 [[ $? -eq 0 ]] && eval "$(hub alias -s)"
-
-# node.js
-export NODE_PATH=/usr/local/lib/node
 
 # Heroku Toolbelt
 export PATH=/usr/local/heroku/bin:$PATH
