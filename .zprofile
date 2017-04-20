@@ -30,9 +30,6 @@ if [[ -d "$HOME/.anyenv/bin" ]]; then
   eval "$(anyenv init -)"
 fi
 
-# RVM (Ruby Version Manager)
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 # Python
 export PYTHONSTARTUP=$HOME/.pystartup
 
