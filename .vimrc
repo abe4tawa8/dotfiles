@@ -45,6 +45,9 @@ set fileformats=unix,dos,mac
 set list
 set listchars=eol:¬,tab:▸\ ,trail:-
 
+" 全角記号などの文字幅を2文字分とする
+set ambiwidth=double
+
 " ステータスライン
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
